@@ -24,9 +24,13 @@ public class Main {
 				System.out.println("O número de tentativas necessárias: " + tentativas);
 				continua = false;
 			}
-			else {
-				System.out.println("Número não sorteado!");
+			else if(numero < nSorteado) {
+				System.out.println("Número não sorteado! O Número sorteado é maior que o digitado.");
 				System.out.println("Tente Novamente.");
+			}
+			else {
+				System.out.println("Número não sorteado! O Número sorteado é menor que o digitado.");
+				System.out.println("Tente Novamente.");	
 			}
 		}while(continua == true);
 		
